@@ -1,6 +1,7 @@
 # ECS7016P: Interactive Agents and Procedural Generation 
 ## Coursework 3: Tech Demo(Maze Runner)
-### Download project from given link:
+### Download project from given link: 
+https://drive.google.com/file/d/1q1T4eGucsUAxUuzaySDsh_kSO4gqFtCI/view?usp=sharing
 
 ### Introduction
 In this project we create an interactive tech demonstration of some game AI techniques in Unity, it consists
@@ -170,10 +171,9 @@ Assets/Generator/MazeGenerator.cs<br /><br />
 Assets/Generator/MazeRenderer.cs<br />
 
 ## Video Documentation
-* URL: 
-
+* URL: https://drive.google.com/file/d/1RPtOaKl4dYfFQzehVlHvJQ9jcU1J5FwW/view?usp=sharing
 ## Future Enhancements
-
+ 
 The minimal viable product of tech demo shows the Agent Navigation using NavMesh, implementing agent behaviours like JUMP, CROUCH
 RUN, TURN(360 Degree). The AI Agent has capability of finding the shortest path to given destination using A-Star Path Finding 
 Algorithm and autonomously navigating to it using sensory inputs from the game environment. Future enhancements of this demo might 
