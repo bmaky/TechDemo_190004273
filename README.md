@@ -44,8 +44,8 @@ algorithm and sensory inputs to Turn, Jump and Crouch, for this setting go to th
 and set X and Z coordinate location of your choice and hit play.
 
 The main hierarchy and initial screen should look like this:
-* Hierarchy<br /><img height="150" src="/Users/bhavya/Documents/Interactive Agents And Procedural Generation/TechDemo_190004273/Images/Hierarchy.png" width="200"/><br /><br />
-* Initial Game Screen<br /><img height="300" src="/Users/bhavya/Documents/Interactive Agents And Procedural Generation/TechDemo_190004273/Images/GameScreenInitial.png" width="500"/>
+* Hierarchy<br />![hierarchy](https://github.com/bmaky/TechDemo_190004273/blob/master/Images/Hierarchy.png?raw=true)
+* Initial Game Screen<br />![hierarchy](https://github.com/bmaky/TechDemo_190004273/blob/master/Images/GameScreenInitial.png?raw=true)
 
 ## Agent
 
@@ -54,14 +54,14 @@ The ThirdPersonCharacter(in ThirdPersonController)script exposes a number of pro
 in air, and various other speed and behaviour modifiers. For more detail about each setting, see the comments in the script.
 The ThirdPersonUserControl script takes input from the "CrossPlatformInput" class included in given location
 (Assets/Agent/CrossPlatformInput/Scripts).
-* Script Properties<br /><img height="300" src="/Users/bhavya/Documents/Interactive Agents And Procedural Generation/TechDemo_190004273/Images/TPController.png" width="300"/>
+* Script Properties<br />![hierarchy](https://github.com/bmaky/TechDemo_190004273/blob/master/Images/TPController.png?raw=true)
 
 ### Third Person AI Control Character
 The AICharacterControl(in AIThirdPersonController)script exposes Target property, where we pass in the Destination 
 object(set X and Z coordinates) in Hierarchy view, this allows AI agent to navigate autonomously to the set destination. This agent also 
 has ThirdPersonCharacter Script similar to User controlled Agent, exposing same properties as defined above to manipulate
 similar behaviour.
-* Script Properties<br /><img height="300" src="/Users/bhavya/Documents/Interactive Agents And Procedural Generation/TechDemo_190004273/Images/AIController.png" width="300"/>
+* Script Properties<br />![hierarchy](https://github.com/bmaky/TechDemo_190004273/blob/master/Images/AIController.png?raw=true)
 
 ### Agent Navigation & Behaviour
 
@@ -105,7 +105,9 @@ we first map the start(seeker position) and destination(destination position) lo
 location, visiting all the neighbours until we reach the destination polygon. Tracing the visited polygons allows us to find
 the sequence of polygons which will lead from the start to the destination. Algorithm we used to find the path is A* (pronounced
 “A star”), which is what Unity uses. For more info please refer code comments.
-* Script Properties<br /><img height="300" src="/Users/bhavya/Documents/Interactive Agents And Procedural Generation/TechDemo_190004273/Images/NavMesh.png" width="300"/><br /><br />
+* Script Properties<br />
+![hierarchy](https://github.com/bmaky/TechDemo_190004273/blob/master/Images/NavMesh.png?raw=true)
+<br /><br />
 
 **Agent Behaviour**<br />
 The class ThirdPersonCharacter found in Assets/Agent/Character/Scripts
@@ -153,12 +155,12 @@ GetUnvisitedNeighbours() method. We use a utility function GetOppositeWall() to 
 As shown in the below given section Generator output 3 different types of maze generated procedurally using this algorithm.
 Refer to comments in code for more info.
 
-* Script Properties<br /><img height="300" src="/Users/bhavya/Documents/Interactive Agents And Procedural Generation/TechDemo_190004273/Images/MazeRenderer.png" width="300"/>
+* Script Properties<br />![hierarchy](https://github.com/bmaky/TechDemo_190004273/blob/master/Images/MazeRenderer.png?raw=true)
 
 ### Generator output
-<img height="200" src="/Users/bhavya/Documents/Interactive Agents And Procedural Generation/TechDemo_190004273/Images/Map1.png" width="300"/>
-<img height="200" src="/Users/bhavya/Documents/Interactive Agents And Procedural Generation/TechDemo_190004273/Images/Map2.png" width="300"/>
-<img height="200" src="/Users/bhavya/Documents/Interactive Agents And Procedural Generation/TechDemo_190004273/Images/Map3.png" width="300"/>
+![hierarchy](https://github.com/bmaky/TechDemo_190004273/blob/master/Images/Map1.png?raw=true)
+![hierarchy](https://github.com/bmaky/TechDemo_190004273/blob/master/Images/Map2.png?raw=true)
+![hierarchy](https://github.com/bmaky/TechDemo_190004273/blob/master/Images/Map3.png?raw=true)
 
 ### Code Files
 1. <b>Maze Generator</b><br />
